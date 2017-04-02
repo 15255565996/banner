@@ -1,0 +1,52 @@
+在你的html中写
+
+	<div class="banner">
+    	<ul class="banner_ul">
+        	<li class="active"><img src="" /></li>            
+      </ul>        
+    </div>
+
+后引入banner.js，banner.css。
+第一个li需要加active
+
+不支持移动端滑动事件，图片自适应。
+banner的宽高是图片的宽高。
+左右箭头和下标封装在 $.fn.bannerJS 函数中。自动添加。
+
+
+test
+
+
+	<!doctype html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>轮播图（左右轮换 能够适应不同设备宽度）</title>
+			<link rel="stylesheet" type="text/css" href="css/banner.css">
+			<script src="js/jQuery/jquery.min.js"></script>
+			<script src="js/banner.js"></script>
+		</head>
+		
+		<body>
+			<div class="banner">
+		    	<ul class="banner_ul">
+		        	<li class="active"><img src="img/111.jpg" /></li>
+		            <li><img src="img/112.jpg"/></li>
+		            <li><img src="img/113.jpg"/></li>
+		            <li><img src="img/114.jpg"/></li>
+					<li><img src="img/115.jpg"/></li>
+		            <li><img src="img/116.jpg"/></li>
+		            <li><img src="img/117.jpg"/></li>
+		      </ul>        
+		    </div>
+	</body>
+	</html>
+
+
+
+
+
+
+
+
+
